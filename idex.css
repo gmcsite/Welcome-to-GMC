@@ -1,0 +1,312 @@
+*{
+    margin: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+html body {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   width: 100%;
+}
+
+#item1{
+    
+    background-color: black;
+}
+header{
+    width: 100%;
+    padding: 1px 0;
+    border-left: 20px solid red;
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Not suns JP', sans-serif;
+    position: fixed;
+    z-index: 9999;
+}
+li{
+    display: inline-block;
+    margin: 0 20px;
+}
+li a {
+    text-decoration:none;
+    color:lightgray;
+    transition: .3s;
+}
+li a:hover{
+    color: white;
+}
+#button{
+    display: inline-flex;
+    text-align: center;
+    padding: 100px;
+    padding-top: 0%;
+    padding-bottom: 0px;
+    background-color: black;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;  /* 水平方向に中央寄せ */
+    align-items: center;       /* 垂直方向に中央寄せ */
+    height: 100%;              /* スライダーの高さを指定、必要に応じて調整 */
+    margin: 0 auto;            /* ページ中央に配置 */
+    width: 600px;               /* スライダー全体の幅 */
+    max-width: 1000px;          /* 画像の幅に合わせて最大幅を設定 */
+    height: 750px;             /* 画像の高さに合わせた固定高さ */
+}
+.image {
+    display: none;
+    width: 550px;
+    height: 750px;
+    width: 100%;
+
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);  /* 半透明の背景 */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;  /* 画像より前面に表示 */
+}
+/* 左ボタンの位置をスライダーの左端に固定 */
+.prev {
+    left: 1px;
+}
+
+/* 右ボタンの位置をスライダーの右端に固定 */
+.next {
+    right: 1px;
+}
+
+.image.active {
+    display: block;
+}
+
+p{
+    padding-right: 70px;
+    color: black;
+}
+h1{
+    color: #f9f9f9;
+    border-left: 20px solid red;
+    background-color: black;
+    text-align: center;
+    padding:30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 70px;
+   
+}
+#item2{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+h2{
+    color: #f9f9f9;
+    border-left: 20px solid red;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+h3{
+    color: #f9f9f9;
+    border-left: 20px solid red;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.news {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between news boxes */
+}
+
+.news-box {
+    width: 290px; /* Each news box will take up about 30% of the width */
+    margin-right:  20px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 10px;
+    align-items: center;
+    float: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.news-box img {
+    width: 300px; /* Make images responsive */
+    height: auto;
+    display: block;
+    border: 5px solid white;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.news-box h7, .news-box h8, .news-box h9  .news-box h10{
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.news-box p {
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+.kizi{
+    text-align: left;
+}
+
+h4{
+    color: #f9f9f9;
+    border-left: 20px solid red;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 600px;
+    margin-bottom: 50px;
+}
+.quiz-box{
+    font-weight: bold;  
+    margin-bottom: 50px; 
+    margin: 0%;
+}
+
+h5{
+    color: #f9f9f9;
+    border-left: 20px solid red;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.aka{
+    font-weight: bold;
+}
+.social-list{
+    display: flex;
+    justify-content: center;
+}
+.social-list li{
+    margin: 0 5px;
+    margin-top: 50px;
+}
+
+h6{
+    color: #f9f9f9;
+    border-left: 20px solid red;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+#access2{
+        font-weight: bold;
+        text-align: center;
+        margin: 20px;
+        
+}
+
+h7{
+    font-weight: bold;
+    padding: 30px;
+}
+h8{
+    font-weight: bold;
+    padding: 30px;
+}
+h9{
+    font-weight: bold;
+    padding: 30px;
+}
+.kizi{
+    font-weight: bold;
+
+}
+h1,h2,h3,h4,h5,h6,h7,h8,h9{
+    font-size: 1.5em;
+}
+footer {
+    width: 100%;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Not suns JP', sans-serif;
+    font-weight: bold;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    margin-top: 30px;
+    transition: all 3s ease;
+    opacity: 0;
+}
+
+.slides img {
+    width: 33.33%;
+    height: auto;
+    flex-shrink: 0;
+}
+.active{
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        width: 100%;   /* スライダーを画面全体の幅に合わせる */
+        height: auto;  /* 高さを自動調整 */
+    }
+
+    .image {
+        width: 100%;   /* 画像の幅を100%に設定して、画面にフィットさせる */
+        height: auto;  /* 高さは自動調整 */
+    }
+
+    /* ボタンのサイズや配置をスマホ向けに調整 */
+    .prev, .next {
+        padding: 5px;  /* ボタンを少し小さくする */
+        font-size: 14px; /* ボタンのフォントサイズを小さく */
+    }
+
+    .prev {
+        left: 5px;  /* 左のボタンの位置を画面に合わせて調整 */
+    }
+
+    .next {
+        right: 5px; /* 右のボタンの位置を画面に合わせて調整 */
+    }
+}
+
+
+
+
