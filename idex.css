@@ -335,6 +335,17 @@ footer {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .news {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-list {
+        flex-direction: column;
+    }
+}
+
 .map-container {
     position: relative;
     width: 100%;
