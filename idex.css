@@ -309,29 +309,35 @@ footer {
 }
 /*スマホ対応の為のコード*/
 @media screen and (max-width: 480px) {
+    
     header, footer {
         font-size: 0.8em;
         padding: 10px;
+        position:fixed;
     }
 
     .news-box, .quiz-box {
         width: 90%;
         margin: 10px auto;
+        position:fixed;
     }
 
     #item2 img, .slider img {
         width: 100%;
         height: auto;
+        position:fixed;
     }
 
     /* ナビゲーションメニュー */
     #button nav li {
         margin: 0 10px;
+        position:fixed;
     }
 
     /* スライダーボタン */
     .prev, .next {
         padding: 8px;
+        position:fixed;
     }
 }
 
