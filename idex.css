@@ -306,6 +306,9 @@ footer {
     .next {
         right: 5px; /* 右のボタンの位置を画面に合わせて調整 */
     }
+    .wrap {
+     overflow: hidden;
+ }
 }
 /*スマホ対応の為のコード*/
 @media screen and (max-width: 480px) {
